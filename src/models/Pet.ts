@@ -137,8 +137,11 @@ export const PetObject ={
     getFromType:(tipoAnimal:PetType)=>{
         return data.filter(item=>(item.type === tipoAnimal));
     },
-    getFromName:(nome:any)=>{
-        return data.filter(item=>(item.name.toLowerCase().indexOf(nome.toLowerCase())) > -1);
+    getFromName:(query:string)=>{
+        if(query!=""){
+            return data.filter(item=>(item.name.toLowerCase().indexOf(query.toLowerCase())) > -1);
+        }
+        return null;
     }
 }
 
