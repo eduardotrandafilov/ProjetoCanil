@@ -12,3 +12,7 @@ Projeto feito utilizando Node + Typescript
 
 ### Para rodar o projeto 
 `npm run start-dev`
+
+### Deploy no ambiente(PaaS) Heroku
+
+[Projeto no heroku](https://radiant-gorge-05760.herokuapp.com/)
